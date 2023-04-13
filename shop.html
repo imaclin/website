@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maclin</title>
+    <link rel="stylesheet" href="style.css">
+
+   <style>
+    .centered-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 1rem;
+    }
+
+    body {
+      margin: 10px;
+    }
+  </style>
+    
+</head>
+<center>
+<body>
+
+  
+  <div class="centered-row">
+    Maclin
+    <span id="today-date"></span>
+    <img src="maclin_profile_pic.png" alt="Profile Picture" class="profile-picture" width="50" height="50">
+  </div>
+
+  <script>
+  function formatDate(date) {
+    const monthNames = [
+      "January", "February", "March",
+      "April", "May", "June", "July",
+      "August", "September", "October",
+      "November", "December"
+    ];
+    const day = date.getDate();
+    const monthIndex = date.getMonth();
+    const year = date.getFullYear();
+
+    return monthNames[monthIndex] + ' ' + day + ', ' + year;
+  }
+
+  document.getElementById('today-date').textContent = formatDate(new Date());
+</script>
+
+  <div style="text-align: left; padding-left: 20px;">
+  <a href="index.html" style="font-size: 16px; text-decoration: none;">←</a>
+</div>
+      
+<br><br>
+
+  
+<div id='collection-component-1681411909904'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'shop.mind.sx',
+      storefrontAccessToken: '4e769d34c397132dc7a37e4ec1668f4f',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '296041775267',
+        node: document.getElementById('collection-component-1681411909904'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(50% - 40px)",
+          "margin-left": "40px",
+          "margin-bottom": "50px",
+          "width": "calc(50% - 40px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        },
+        "imgWrapper": {
+          "padding-top": "calc(75% + 15px)",
+          "position": "relative",
+          "height": "0"
+        }
+      },
+      "title": {
+        "font-family": "Times New Roman, serif",
+        "font-weight": "normal",
+        "font-size": "19px",
+        "color": "#000000"
+      },
+      "button": {
+        "font-family": "Arial, serif",
+        "font-size": "13px",
+        "padding-top": "10px",
+        "padding-bottom": "10px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#d2d2d2"
+        },
+        "background-color": "#f1f1f1",
+        ":focus": {
+          "background-color": "#FF00EE"
+        },
+        
+        "border-radius": ".5",
+        "padding-left": "7px",
+        "padding-right": "7px",
+        "padding-top": "2px",
+        "padding-bottom": "2px",
+        "border": "1px solid #000000"
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "price": {
+        "font-family": "Times New Roman, serif",
+        "color": "#000000"
+      },
+      "compareAt": {
+        "font-family": "Times New Roman, serif",
+        "color": "#000000"
+      },
+      "unitPrice": {
+        "font-family": "Times New Roman, serif",
+        "color": "#000000"
+      }
+    },
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "text": {
+      "button": "view details"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-40px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Arial, serif",
+        "font-size": "13px",
+        "padding-top": "10px",
+        "padding-bottom": "10px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#d2d2d2"
+        },
+        "background-color": "#f1f1f1",
+        ":focus": {
+          "background-color": "#FF00EE"
+        },
+        
+        "border-radius": ".5",
+        "padding-left": "7px",
+        "padding-right": "7px",
+        "padding-top": "2px",
+        "padding-bottom": "2px",
+        "border": "1px solid #000000"
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "title": {
+        "font-family": "Times New Roman, serif",
+        "font-weight": "normal",
+        "font-size": "26px",
+        "color": "#000000"
+      },
+      "price": {
+        "font-family": "Times New Roman, serif",
+        "font-weight": "normal",
+        "font-size": "18px",
+        "color": "#000000"
+      },
+      "compareAt": {
+        "font-family": "Times New Roman, serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#000000"
+      },
+      "unitPrice": {
+        "font-family": "Times New Roman, serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#000000"
+      },
+      "description": {
+        "font-family": "Times New Roman, serif",
+        "color": "#000000"
+      }
+    },
+    "text": {
+      "button": "add to cart"
+    }
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-weight": "bold",
+        "color": "#ffffff"
+      },
+      "select": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-weight": "bold"
+      }
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Arial, serif",
+        "font-size": "13px",
+        "padding-top": "10px",
+        "padding-bottom": "10px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#d2d2d2"
+        },
+        "background-color": "#f1f1f1",
+        ":focus": {
+          "background-color": "#FF00EE"
+        },
+        
+        "border-radius": ".5",
+        "padding-left": "7px",
+        "padding-right": "7px",
+        "padding-top": "2px",
+        "padding-bottom": "2px",
+        "border": "1px solid #000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "empty": {
+        "color": "#000000"
+      },
+      "noteDescription": {
+        "color": "#000000"
+      },
+      "discountText": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "discountAmount": {
+        "color": "#000000"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "notice": "shipping and discount codes are added at checkout.",
+      "button": "checkout",
+      "noteDescription": "Special instructions for seller:"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Times New Roman, serif",
+        "background-color": "#e9e9e9",
+        ":hover": {
+          "background-color": "#d2d2d2"
+        },
+        ":focus": {
+          "background-color": "#d2d2d2"
+        }
+      },
+      "count": {
+        "font-size": "13px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "iconPath": {
+        "fill": "#000000"
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "fullPrice": {
+        "color": "#000000"
+      },
+      "discount": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+  <br><br><br>
+
+        <div class="social-links">
+          
+            <a href="https://youtube.com/maclinb" target="_blank">youtube</a> 
+
+          ‎
+            <a href="https://instagram.com/maclin" target="_blank">instagram</a> 
+          
+          ‎
+            <a href="https://twitter.com/maclin__" target="_blank">twitter</a> 
+
+          ‎
+            <a href="podcast.html">podcast</a> 
+        </div>
+
+<br>
+      
+        <div class="footer-links">
+            <a href="shop.html">shop</a>  ‎
+            <a href="https://www.amazon.com/dp/B0B92FZQB4/" target="_blank">poetry</a> ‎
+            <a href="notebook.html">notebook</a> ‎
+        </div>
+
+
+  <br><br>
+      
+        <div class="logo">
+            <a href="https://www.mind.sx" target="_blank">
+  <img src="MINDLOGO.PNG" class="logo-image" width="75px">
+</a>
+
+        </div>
+    </div>
+
+
+  <br>
+
+
+  <div class="contact info">
+            <a href="mailto:mac@maclin.io">contact</a> ‎
+            <a href="info.html">info</a> 
+        </div>
+
+<br>
+  
+    </center>
+</body>
+</html>

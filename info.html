@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maclin</title>
+    <link rel="stylesheet" href="style.css">
+
+   <style>
+    .centered-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 1rem;
+    }
+
+    body {
+      margin: 10px;
+    }
+  </style>
+    
+</head>
+<center>
+<body>
+
+  
+  <div class="centered-row">
+    Maclin
+    <span id="today-date"></span>
+    <img src="maclin_profile_pic.png" alt="Profile Picture" class="profile-picture" width="50" height="50">
+  </div>
+
+  <script>
+  function formatDate(date) {
+    const monthNames = [
+      "January", "February", "March",
+      "April", "May", "June", "July",
+      "August", "September", "October",
+      "November", "December"
+    ];
+    const day = date.getDate();
+    const monthIndex = date.getMonth();
+    const year = date.getFullYear();
+
+    return monthNames[monthIndex] + ' ' + day + ', ' + year;
+  }
+
+  document.getElementById('today-date').textContent = formatDate(new Date());
+</script>
+
+
+<div style="text-align: left; padding-left: 20px;">
+  <a href="index.html" style="font-size: 16px; text-decoration: none;">←</a>
+</div>
+
+<br><br>
+
+
+
+
+  
+ <img src="maclin_profile_pic.png" alt="Profile Picture" class="profile-picture" width="250" height="250">
+
+
+  
+<br><br><br>
+
+        <div class="social-links">
+          
+            <a href="https://youtube.com/maclinb" target="_blank">youtube</a> 
+
+          ‎
+            <a href="https://instagram.com/maclin" target="_blank">instagram</a> 
+          
+          ‎
+            <a href="https://twitter.com/maclin__" target="_blank">twitter</a> 
+
+          ‎
+            <a href="podcast.html">podcast</a> 
+        </div>
+
+<br>
+      
+        <div class="footer-links">
+            <a href="shop.html">shop</a>  ‎
+            <a href="https://www.amazon.com/dp/B0B92FZQB4/" target="_blank">poetry</a> ‎
+            <a href="notebook.html">notebook</a> ‎
+        </div>
+      
+
+   <br><br>
+      
+        <div class="logo">
+            <a href="https://www.mind.sx" target="_blank">
+  <img src="MINDLOGO.PNG" class="logo-image" width="75px">
+</a>
+
+        </div>
+    </div>
+
+
+  <br>
+
+
+  <div class="contact info">
+            <a href="mailto:mac@maclin.io">contact</a> ‎
+            <a href="info.html">info</a> 
+        </div>
+
+<br>
+  
+    </center>
+</body>
+</html>
